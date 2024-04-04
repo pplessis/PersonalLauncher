@@ -86,7 +86,7 @@ links:
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
   - name: "Info"
-    icon: "assets/myAssets/dashboard-icons/png/webkit.png"
+    icon: "fa fa-bullhorn"
     items:
       - name: "Paris"
         location: "Paris" # your location.
