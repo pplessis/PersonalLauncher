@@ -85,17 +85,44 @@ links:
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
+  - name: "Info"
+    icon: "assets/myAssets/dashboard-icons/png/webkit.png"
+    items:
+      - name: "Paris"
+        location: "Paris" # your location.
+        locationId: "2988507" # Optional: Specify OpenWeatherMap city ID for better accuracy
+        apikey: "76d419ed39c608fda860deb06ed33504" # insert your own API key here. Request one from https://openweathermap.org/api.
+        units: "metric" # units to display temperature. Can be one of: metric, imperial, kelvin. Defaults to kelvin.
+        background: "square" # choose which type of background you want behind the image. Can be one of: square, circle, none. Defaults to none.
+        type: "OpenWeather"
+
+      - name: "Angers"
+        location: "Amsterdam" # your location.
+        locationId: "3037656" # Optional: Specify OpenWeatherMap city ID for better accuracy
+        apikey: "76d419ed39c608fda860deb06ed33504" # insert your own API key here. Request one from https://openweathermap.org/api.
+        units: "metric" # units to display temperature. Can be one of: metric, imperial, kelvin. Defaults to kelvin.
+        background: "square" # choose which type of background you want behind the image. Can be one of: square, circle, none. Defaults to none.
+        type: "OpenWeather"
+
+      - name: "Pi-hole"
+        logo: "assets/myAssets/dashboard-icons/png/pi-hole.png"
+        # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "http://dns.local/admin"
+        apikey: "cad660234a501c1559e7af565ba54171a76a7132e2944c410922dcdba7c8ea02" # optional, needed if web interface is password protected
+        type: "PiHole"
+  
+  
   - name: "Applications"
     icon: "fas fa-cloud"
     items:
-      - name: "Pi-hole"
-        logo: "assets/myAssets/dashboard-icons/png/pi-hole.png"
-        #subtitle: "PiHole"
-        tag: "networks"
-        keywords: "DNS Security"
-        url: "http://sam.local/admin"
-        type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
-        target: "_blank" # optional html a tag target attribute
+      #- name: "Pi-hole"
+      #  logo: "assets/myAssets/dashboard-icons/png/pi-hole.png"
+      #  #subtitle: "PiHole"
+      #  tag: "networks"
+      #  keywords: "DNS Security"
+      #  url: "http://sam.local/admin"
+      #  type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
+      #  target: "_blank" # optional html a tag target attribute
 
       - name: "Home Bridge"
         logo: "assets/myAssets/dashboard-icons/png/homebridge.png"
@@ -158,28 +185,3 @@ services:
         url: "https://app.primevideo.com/home"
         target: "_blank" # optional html a tag target attribute
 
-  - name: "Info"
-    icon: "fas fa-photo-video"
-    items:
-      - name: "Paris"
-        location: "Paris" # your location.
-        locationId: "2988507" # Optional: Specify OpenWeatherMap city ID for better accuracy
-        apikey: "76d419ed39c608fda860deb06ed33504" # insert your own API key here. Request one from https://openweathermap.org/api.
-        units: "metric" # units to display temperature. Can be one of: metric, imperial, kelvin. Defaults to kelvin.
-        background: "square" # choose which type of background you want behind the image. Can be one of: square, circle, none. Defaults to none.
-        type: "OpenWeather"
-
-      - name: "Angers"
-        location: "Amsterdam" # your location.
-        locationId: "3037656" # Optional: Specify OpenWeatherMap city ID for better accuracy
-        apikey: "76d419ed39c608fda860deb06ed33504" # insert your own API key here. Request one from https://openweathermap.org/api.
-        units: "metric" # units to display temperature. Can be one of: metric, imperial, kelvin. Defaults to kelvin.
-        background: "square" # choose which type of background you want behind the image. Can be one of: square, circle, none. Defaults to none.
-        type: "OpenWeather"
-
-      - name: "Pi-hole"
-        logo: "assets/tools/sample.png"
-        # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "http://dns.local/admin"
-        apikey: "cad660234a501c1559e7af565ba54171a76a7132e2944c410922dcdba7c8ea02" # optional, needed if web interface is password protected
-        type: "PiHole"
