@@ -101,7 +101,7 @@ services:
         logo: "assets/myAssets/dashboard-icons/png/homebridge.png"
         subtitle: "HomeBridge HomeKIT"
         tag: "app"
-        url: "http://sam.local:8581"
+        url: "http://homebridge.local:8581"
         target: "_blank" # optional html a tag target attribute
 
       - name: "GateWay"
@@ -129,15 +129,15 @@ services:
         logo: "assets/myAssets/dashboard-icons/png/portainer-alt.png"
         subtitle: "Manage Services"
         tag: "app"
-        url: "http://sam.local:9000"
+        url: "https://docker.local:9443"
         target: "_blank" # optional html a tag target attribute
 
-      - name: "SSH"
-        logo: "assets/myAssets/dashboard-icons/png/sshwifty.png"
-        subtitle: "Web App"
-        tag: "app"
-        url: "https://sam.local:6176"
-        target: "_blank" # optional html a tag target attribute
+#      - name: "SSH"
+#        logo: "assets/myAssets/dashboard-icons/png/sshwifty.png"
+#        subtitle: "Web App"
+#        tag: "app"
+#        url: "https://sam.local:6176"
+#        target: "_blank" # optional html a tag target attribute
 
         
 
@@ -157,3 +157,29 @@ services:
         tag: "site"
         url: "https://app.primevideo.com/home"
         target: "_blank" # optional html a tag target attribute
+
+  - name: "Info"
+    icon: "fas fa-photo-video"
+    items:
+      - name: "Paris"
+        location: "Paris" # your location.
+        locationId: "2988507" # Optional: Specify OpenWeatherMap city ID for better accuracy
+        apikey: "76d419ed39c608fda860deb06ed33504" # insert your own API key here. Request one from https://openweathermap.org/api.
+        units: "metric" # units to display temperature. Can be one of: metric, imperial, kelvin. Defaults to kelvin.
+        background: "square" # choose which type of background you want behind the image. Can be one of: square, circle, none. Defaults to none.
+        type: "OpenWeather"
+
+      - name: "Angers"
+        location: "Amsterdam" # your location.
+        locationId: "3037656" # Optional: Specify OpenWeatherMap city ID for better accuracy
+        apikey: "76d419ed39c608fda860deb06ed33504" # insert your own API key here. Request one from https://openweathermap.org/api.
+        units: "metric" # units to display temperature. Can be one of: metric, imperial, kelvin. Defaults to kelvin.
+        background: "square" # choose which type of background you want behind the image. Can be one of: square, circle, none. Defaults to none.
+        type: "OpenWeather"
+
+      - name: "Pi-hole"
+        logo: "assets/tools/sample.png"
+        # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
+        url: "http://dns.local/admin"
+        apikey: "cad660234a501c1559e7af565ba54171a76a7132e2944c410922dcdba7c8ea02" # optional, needed if web interface is password protected
+        type: "PiHole"
