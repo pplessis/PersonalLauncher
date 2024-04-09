@@ -104,13 +104,19 @@ services:
         background: "square" # choose which type of background you want behind the image. Can be one of: square, circle, none. Defaults to none.
         type: "OpenWeather"
 
-      - name: "Pi-hole"
-        logo: "assets/myAssets/dashboard-icons/png/pi-hole.png"
+      - name: "AdGuard"
+        logo: "assets/myAssets/dashboard-icons/png/adguard-home.png"
         # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "http://dns.local/admin"
-        apikey: "cad660234a501c1559e7af565ba54171a76a7132e2944c410922dcdba7c8ea02" # optional, needed if web interface is password protected
-        type: "PiHole"
-  
+        url: "http://dns.local:8888"
+        target: '_blank'
+        type: "AdGuardHome"
+
+      #- name: "Pi-hole"
+      #  logo: "assets/myAssets/dashboard-icons/png/pi-hole.png"
+      #  # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
+      #  url: "http://dns.local/admin"
+      #  apikey: "cad660234a501c1559e7af565ba54171a76a7132e2944c410922dcdba7c8ea02" # optional, needed if web interface is password protected
+      #  type: "PiHole"
   
   - name: "Applications"
     icon: "fas fa-cloud"
