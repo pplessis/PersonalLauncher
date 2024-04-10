@@ -148,7 +148,7 @@ services:
         logo: "assets/myAssets/sonos.png"
         subtitle: "Manage Sounds Systems"
         tag: "app"
-        url: "http://10.0.0.236:1400/support/review"
+        url: "http://10.0.0.126:1400/support/review"
         target: "_blank" # optional html a tag target attribute
 
       - name: "Armor"
