@@ -2,3 +2,4 @@ graph.facebook.com
 www.facebook.com
 web.facebook.com
 lookaside.facebook.com
+eu-teams.events.data.microsoft.com
