@@ -2,4 +2,7 @@ graph.facebook.com
 www.facebook.com
 web.facebook.com
 lookaside.facebook.com
+*.events.data.microsoft.com
 eu-teams.events.data.microsoft.com
+self.events.data.microsoft.com
+dealabs.digidip.net
