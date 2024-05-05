@@ -107,7 +107,7 @@ services:
       - name: "AdGuard"
         logo: "assets/myAssets/dashboard-icons/png/adguard-home.png"
         # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
-        url: "http://dns.local:8888"
+        url: "http://home.local:8888"
         target: '_blank'
         type: "AdGuardHome"
 
