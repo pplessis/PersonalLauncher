@@ -130,6 +130,13 @@ services:
       #  type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
       #  target: "_blank" # optional html a tag target attribute
 
+      - name: "Private GPT"
+        logo: "assets/myAssets/dashboard-icons/png/chatgpt.png"
+        subtitle: "Ask your question?"
+        tag: "app"
+        url: "http://walfred.local:8001"
+        target: "_blank" # optional html a tag target attribute
+      
       - name: "Home Bridge"
         logo: "assets/myAssets/dashboard-icons/png/homebridge.png"
         subtitle: "HomeBridge HomeKIT"
