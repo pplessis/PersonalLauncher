@@ -6,3 +6,4 @@ lookaside.facebook.com
 eu-teams.events.data.microsoft.com
 self.events.data.microsoft.com
 dealabs.digidip.net
+www.noip.com
