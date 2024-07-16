@@ -10,3 +10,4 @@ www.noip.com
 firebasestorage.googleapis.com
 analytics.shopify.com
 www.klaviyo.com
+static-app.klaviyo.com
