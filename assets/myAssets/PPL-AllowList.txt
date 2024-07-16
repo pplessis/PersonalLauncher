@@ -9,3 +9,4 @@ dealabs.digidip.net
 www.noip.com
 firebasestorage.googleapis.com/v0/b/ppl-quick-page.appspot.com/o/myInternationalDays.json
 firebasestorage.googleapis.com/v0/b/ppl-quick-page.appspot.com/o/myInternationalDaysIndex.json
+analytics.shopify.com
