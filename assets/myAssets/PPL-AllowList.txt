@@ -9,3 +9,4 @@ dealabs.digidip.net
 www.noip.com
 firebasestorage.googleapis.com
 analytics.shopify.com
+www.klaviyo.com
