@@ -15,3 +15,5 @@ www.espace-icare.com
 eu-teams.events.data.microsoft.com
 analytics.shopify.com
 www.google.com
+cdn.hubblecontent.osi.office.net
+hubblecontent.osi.office.net
