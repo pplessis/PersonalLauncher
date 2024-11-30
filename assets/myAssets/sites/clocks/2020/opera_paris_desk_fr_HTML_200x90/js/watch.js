@@ -44,13 +44,14 @@ var clockSettings = {
     clockHeight: dim.height, /* height of the clock to be set on top the html file */
     flashname: '', /* set the flash name (place the file in the img folder)*/
     fallback: '', /* set the fallback image name (place the file in the img folder)*/
-    trackingurl: 'https://www.rolex.com/fr?cmpid=dsp_Clock_operadeparis.fr_2019_rlx19017304', /* set the tracking url */
+    //trackingurl: 'https://www.rolex.com/fr?cmpid=dsp_Clock_operadeparis.fr_2019_rlx19017304', /* set the tracking url */
+    trackingurl: '#', /* set the tracking url */
     leadingZeros: false,
     amPm: false, /* display AM/PM text */
     time24hours: true, /* display time in 24 hours format */
     showText: true, /* display texts and time */
     showTime: false, /* display time without city name, 'Your Time' text */
-    showDay: false, /* show the weekday in text */
+    showDay: true, /* show the weekday in text */
     globalXcenter: (dim.width / 2)-0.75,
     globalYcenter: (dim.height / 2)+2.5,
     globalXscale: dim.scale,
