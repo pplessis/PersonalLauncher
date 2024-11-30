@@ -46,7 +46,7 @@
             time24hours: true, /* show time in 24 hours format with true */
             showText: true, /* show/hide text and time */
             showTime: false, /* show time only without city */
-            showDay: false, /* show day of a week */
+            showDay: true, /* show day of a week */
             // CLOCKS
             clockWidth: 0, /* width of the clock to be set on top the html file */
             clockHeight: 0, /* height of the clock to be set on top the html file */
